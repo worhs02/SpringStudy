@@ -22,10 +22,10 @@ public class User extends BaseEntity{
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(nullable = false, length = 20)
+    @Column(nullable = false)
     private String name;
 
-    @Column(nullable = false, length = 40)
+    @Column(nullable = false)
     private String address;
 
 
@@ -43,6 +43,7 @@ public class User extends BaseEntity{
     @Column(nullable = false, length = 50)
     private String email;
 
+    @Column(nullable = false)
     private Integer myPoint;
 
     private String phone;

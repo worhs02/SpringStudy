@@ -14,8 +14,10 @@ public class Review extends BaseEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long Id;
 
+    @Column(nullable = false)
     private String context;
 
+    @Column(nullable = false)
     private int star;
 
     private String picture;
